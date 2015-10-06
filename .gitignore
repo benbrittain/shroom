@@ -3,3 +3,4 @@ Cargo.lock
 python
 rust
 sel4
+.libcore
