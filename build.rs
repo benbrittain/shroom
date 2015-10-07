@@ -5,9 +5,9 @@ use std::env;
 
 fn main() {
     let out_dir = env::var("OUT_DIR").unwrap();
-    assert!(Command::new("/usr/bin/env")
-            .arg("cp")
-            .args(&[ "./.libcore/libcore.rlib", &*format!("{}", out_dir)])
-            .status().unwrap().success());
+//    assert!(Command::new("/usr/bin/env")
+//            .arg("cp")
+//            .args(&[ "./.libcore/libcore.rlib", &*format!("{}", out_dir)])
+//            .status().unwrap().success());
 }
 

@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Ben Brittain <ben@brittain.org>"]
 build = "./build.rs"
 
-[dependencies.sel4-sys]
-file="~/workspace/rust-sel4"
-SEL4_DEBUG=true
+[lib]
+name = "shroom"
+crate-type = ["staticlib"]
+
+[dependencies]
+sel4-sys = { path="/home/ben/workspace/rust-sel4", branch="master", features = ["SEL4_DEBUG"] }
